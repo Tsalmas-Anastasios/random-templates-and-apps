@@ -1,0 +1,89 @@
+.todo-app {
+    width: min(80%, 1024px);
+    padding: 20px 10px;
+    background-color: #8c4a6e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.todo-app h1 {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.todo-app .todo-app__input-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.todo-app .todo-app__input-form input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+.todo-app .todo-app__list {
+    width: 80%;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.todo-app .todo-app__list .task {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo-app .todo-app__list .task .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-app .todo-app__list .task .container .circle {
+    height: 80%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    background-color: #4a7e9c;
+}
+
+.todo-app .todo-app__list .task .close-icon {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 9;
+    font-size: 1.25rem;
+}
+
+.todo-app .todo-app__list .task .completed {}
+
+.todo-app .todo-app__list .task .completed .container {}
+
+.todo-app .todo-app__list .task .completed .container .circle {
+    background-color: #3b82f6;
+}
+
+.todo-app .todo-app__list .task .completed .container span {
+    text-decoration: line-through;
+}
+
+.todo-app .todo-app__list .task .completed .close-icon {
+    text-decoration: line-through;
+    pointer-events: none;
+}
