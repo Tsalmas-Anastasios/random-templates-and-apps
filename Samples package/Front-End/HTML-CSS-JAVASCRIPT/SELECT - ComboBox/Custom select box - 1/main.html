@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=utf-8" />
+    <script src="https://kit.fontawesome.com/252e2148d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <style>
+        #dropdown-select-custom-a57647{
+            width: 250px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        #dropdown-select-custom-a57647 .dropdown-select-custom-a57647-btn-a5764756 .dropdown-select-custom-a57647-btn-a5764756-select-btn {
+            outline: none;
+            cursor: pointer;
+            font-family: verdana;
+            font-size: 13px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px 5px 5px 5px;
+            color: #808080;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 250px;
+        }
+
+        #dropdown-select-custom-a57647 .dropdown-select-custom-a57647-btn-a5764756 .dropdown-select-custom-a57647-btn-a5764756-select-btn .dropdown-select-custom-a57647-btn-a5764756-label {
+            float: left;
+            width: 205px;
+            text-align: left;
+            overflow:hidden; 
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        #dropdown-select-custom-a57647 .dropdown-select-custom-a57647-btn-a5764756 .dropdown-select-custom-a57647-btn-a5764756-select-btn .dropdown-select-custom-a57647-btn-a5764756-icon {
+            float: right;
+        }
+
+        #dropdown-select-custom-a57647 > .dropdown-select-custom-a57647-menu-choices-a5764757 {
+            display: none;
+            max-height: 220px;
+            overflow: auto;
+            border: 1px solid #808080;
+            border-radius: 0 0 5px 5px;
+            font-family: verdana;
+            position: absolute;
+            width: 248px;
+            box-shadow: 1px 11px 21px -9px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 1px 11px 21px -9px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 11px 21px -9px rgba(0,0,0,0.75);
+        }
+
+        #dropdown-select-custom-a57647 .dropdown-select-custom-a57647-menu-choices-a5764757 .dropdown-select-custom-a57647-menu-choices-a5764757-option-debuger {
+            -ms-word-break: break-all;
+            word-break: break-all;
+            word-break: break-word;
+            max-width: 248px;
+            text-decoration: none;
+            cursor: pointer;
+            color: #292828;
+            font-size: 13px;
+            display: block;
+            background-color: #f9f9f9;
+        }
+        #dropdown-select-custom-a57647 .dropdown-select-custom-a57647-menu-choices-a5764757 .dropdown-select-custom-a57647-menu-choices-a5764757-option-debuger:hover {
+            background-color: #f1f1f1;
+        }
+
+        #dropdown-select-custom-a57647 .dropdown-select-custom-a57647-menu-choices-a5764757 .dropdown-select-custom-a57647-menu-choices-a5764757-option-debuger .dropdown-select-custom-a57647-menu-choices-a5764757-option {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #292828;
+            background-color: inherit;
+        }
+
+		#dropdown-select-custom-a57647 .dropdown-select-custom-a57647-btn-a5764756 .dropdown-select-custom-a57647-btn-a5764756-select-btn:focus {
+        	border-radius: 5px 5px 0 0;
+        }
+        #dropdown-select-custom-a57647:focus-within > .dropdown-select-custom-a57647-menu-choices-a5764757 {
+            display: block;
+        }
+
+
+        /*RESPONSIVE*/
+        @media only screen and (max-width: 280px) {
+            #dropdown-select-custom-a57647{
+                width: 190px;
+            }
+
+            #dropdown-select-custom-a57647 .dropdown-select-custom-a57647-btn-a5764756 .dropdown-select-custom-a57647-btn-a5764756-select-btn {
+                width: 190px;
+            }
+
+            #dropdown-select-custom-a57647 .dropdown-select-custom-a57647-btn-a5764756 .dropdown-select-custom-a57647-btn-a5764756-select-btn .dropdown-select-custom-a57647-btn-a5764756-label {
+                width: 145px;
+            }
+
+            #dropdown-select-custom-a57647 > .dropdown-select-custom-a57647-menu-choices-a5764757 {
+                width: 188px;
+            }
+        }
+        /*RESPONSIVE*/
+    </style>
+</head>
+<body>
+
+    <div id="dropdown-select-custom-a57647" tabindex="0">
+        <input type="hidden" name="value-selected-dropdown-select-custom-a57647" id="value-selected-dropdown-select-custom-a57647" value="" />
+        <div class="dropdown-select-custom-a57647-btn-a5764756">
+            <button type="button" class="dropdown-select-custom-a57647-btn-a5764756-select-btn" id="dropdown-select-custom-a57647-btn-a5764756-select-btn">
+                <div class="dropdown-select-custom-a57647-btn-a5764756-label" id="dropdown-select-custom-a57647-btn-a5764756-select-label">
+                    Select field type
+                </div>
+                <div class="dropdown-select-custom-a57647-btn-a5764756-icon">
+                    <i class="fas fa-chevron-circle-down"></i>
+                </div>
+            </button>
+        </div>
+        <div class="dropdown-select-custom-a57647-menu-choices-a5764757" id="a5764757">
+            <a class="dropdown-select-custom-a57647-menu-choices-a5764757-option-debuger" onclick="value_function_1()">
+                <div class="dropdown-select-custom-a57647-menu-choices-a5764757-option">
+                    Option 1
+                    <!--hidden input-->
+                    <input type="hidden" name="dropdown-select-custom-a57647-menu-choices-a5764757-value-option-1" id="dropdown-select-custom-a57647-menu-choices-a5764757-value-option-1" value="1" />
+                    <input type="hidden" name="dropdown-select-custom-a57647-menu-choices-a5764757-text-option-1" id="dropdown-select-custom-a57647-menu-choices-a5764757-text-option-1" value="Option 1" />
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function value_function_1() {
+            var value = document.getElementById("dropdown-select-custom-a57647-menu-choices-a5764757-value-option-1").value;
+            var text = document.getElementById("dropdown-select-custom-a57647-menu-choices-a5764757-text-option-1").value;
+            document.getElementById("dropdown-select-custom-a57647-btn-a5764756-select-label").innerHTML = text;
+            document.getElementById("value-selected-dropdown-select-custom-a57647").value = value;
+            document.getElementById("dropdown-select-custom-a57647-btn-a5764756-select-btn").style.color = "#000";
+            document.activeElement.blur();
+        }
+    </script>
+
+</body>
+</html>

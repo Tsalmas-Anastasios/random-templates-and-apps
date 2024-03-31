@@ -1,0 +1,49 @@
+ body {
+     margin: 0;
+     font-size: 30px;
+     font-family: Arial, Helvetica, sans-serif;
+     background: #fff;
+ }
+
+ .header {
+     text-align: center;
+     text-transform: uppercase;
+     color: crimson; 
+}
+
+#navbar {
+    overflow: hidden;
+    background: crimson;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,.28);
+}
+
+#navbar a {
+    text-transform: uppercase;
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#navbar a:hover {
+    background-color: #fff;
+    color: #1b1b1b;
+}
+
+.content {
+    padding: 15px;
+    text-align: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-right: 90px;
+}

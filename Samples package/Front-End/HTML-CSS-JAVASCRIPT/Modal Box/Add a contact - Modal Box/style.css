@@ -1,0 +1,549 @@
+#add-contact {
+	background-color: #fff;
+	width: 950px;
+	height: 500px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: -2px 11px 18px 0px rgba(51,51,51,0.67);
+    -webkit-box-shadow: -2px 11px 18px 0px rgba(51,51,51,0.67);
+    -moz-box-shadow: -2px 11px 18px 0px rgba(51,51,51,0.67);
+	border-radius: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;	
+}
+
+#add-contact .header {
+	color: #ff0000;
+	text-align: right;
+	font-size: 22px;
+	padding-top: 9px;
+	padding-right: 18px;
+	cursor: pointer;
+}
+
+#add-contact .left-side, #add-contact .right-side {
+	width: 50%;
+	display: inline-block;
+}
+
+#add-contact .left-side {
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+#add-contact .left-side .form .personal-info .title, #add-contact .left-side .form .address-info .title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+#add-contact .left-side .form .address-info .title {
+	margin-top: 18px;
+}
+
+#add-contact .left-side .form .personal-info label, #add-contact .left-side .form .address-info label {
+	display: inline-block;
+	font-size: 18px;
+	width: 120px;
+}
+
+#add-contact .left-side .personal-info .name,
+#add-contact .left-side .personal-info .surname,
+#add-contact .left-side .personal-info .category,
+#add-contact .left-side .address-info .address,
+#add-contact .left-side .address-info .city,
+#add-contact .left-side .address-info .law,
+#add-contact .left-side .address-info .p-code {
+	margin-bottom: 7px;
+}
+
+#add-contact .left-side .form .personal-info input[type=text], #add-contact .left-side .form .address-info input[type=text] {
+	outline: none;
+	width: 280px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border: 2px solid #ceac20;
+    border-radius: 8px;
+}
+
+#add-contact .left-side .form .personal-info select {
+	outline: none;
+	width: 304px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border: 2px solid #ceac20;
+    border-radius: 8px;
+}
+
+#add-contact .right-side {
+	float: right;
+	margin-top: 15px;
+	margin-right: 8px;
+	width: 47%;
+}
+
+#add-contact .right-side .title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+#add-contact .right-side .phone {
+	margin-bottom: 7px;
+}
+
+#add-contact .right-side .add-phone-fields .label {
+	width: 175px;
+	display: inline-block;
+	font-size: 18px;
+}
+
+#add-contact .right-side .add-phone-fields input[type=tel] {
+	outline: none;
+	width: 237px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border: 2px solid #ceac20;
+    border-radius: 8px;
+}
+
+#add-contact .right-side .add-phone-fields select {
+	outline: none;
+	width: 261px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border: 2px solid #ceac20;
+    border-radius: 8px;
+}
+
+#add-contact .right-side .add-phone-fields .default {
+	margin-top: 15px;
+	width: 100%;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#add-contact .right-side .phone-list .buttons {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#add-contact .right-side .phone-list .buttons .add,
+#add-contact .right-side .phone-list .buttons .delete,
+#add-contact .right-side .phone-list .buttons .reset {
+	outline: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+	cursor: pointer;
+	border: 2px solid #ceac20;
+    border-radius: 8px;
+	background-color: #ceac20;
+    color: #333;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+    transition: 0.6s;
+}
+
+#add-contact .right-side .phone-list .buttons .add:hover,
+#add-contact .right-side .phone-list .buttons .delete:hover,
+#add-contact .right-side .phone-list .buttons .reset:hover {
+	opacity: 0.7;
+}
+
+#add-contact .right-side .phone-list .table .header-table {
+	width: 100%;
+}
+
+#add-contact .right-side .phone-list .table .header-table table {
+	width: 100%;
+	border-radius: 8px;
+	border-collapse: collapse;
+}
+
+#add-contact .right-side .phone-list .table .header-table table tr {
+	background-color: #ceac20;
+}
+
+#add-contact .right-side .phone-list .table .header-table table tr th {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 50%;
+}
+
+#add-contact .right-side .phone-list .table .phones {
+	position: fixed;
+	width: 47%;
+	height: 130px;
+	overflow-x: hidden;
+	margin-top: 6px;
+}
+
+#add-contact .right-side .phone-list .table .phones table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#add-contact .right-side .phone-list .table .phones table tr {
+	border-bottom: 2px solid #ceac20;
+}
+
+#add-contact .right-side .phone-list .table .phones table tr:hover {
+	background-color: #f3f3f3;
+}
+
+#add-contact .right-side .phone-list .table .phones table tr td {
+	width: 50%;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+/*FOOTER*/
+#add-contact .footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#add-contact .footer .add-categories, #add-contact .footer .buttons {
+	display: inline-block;
+}
+
+#add-contact .footer .add-categories {
+	font-size: 12px;
+	padding-bottom: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#add-contact .footer .add-categories a {
+	text-decoration: none;
+	color: #333333;
+	cursor: pointer;
+}
+
+#add-contact .footer .add-categories a:hover {
+	text-decoration: underline;
+}
+
+#add-contact .footer .buttons {
+	float: right;
+	padding-right: 18px;
+}
+
+#add-contact .footer .buttons .save, #add-contact .footer .buttons .reset {
+	outline: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+	cursor: pointer;
+	border: 2px solid #ceac20;
+    border-radius: 8px;
+	background-color: #ceac20;
+    color: #333;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+    transition: 0.6s;
+}
+
+#add-contact .footer .buttons .save:hover, #add-contact .footer .buttons .reset:hover {
+	background-color: transparent;
+    color: #ceac20;
+}
+/*FOOTER*/
+
+@media screen and (max-height: 580px) {
+	#add-contact {
+		position: relative;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+}
+
+@media screen and (max-width: 960px) {
+	#add-contact {
+		width: 650px;
+	}
+	
+	#add-contact .left-side {
+		margin-left: 10px;
+	}
+	
+	#add-contact .left-side .form .personal-info .title, #add-contact .left-side .form .address-info .title {
+		font-size: 20px;
+	}
+	
+	#add-contact .left-side .form .personal-info label, #add-contact .left-side .form .address-info label {
+		font-size: 17px;
+		width: 80px;
+	}
+	
+	#add-contact .left-side .form .personal-info input[type=text], #add-contact .left-side .form .address-info input[type=text] {
+		width: 180px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 14px;
+	}
+	
+	#add-contact .left-side .form .personal-info select {
+		width: 204px;
+	}
+	
+	#add-contact .right-side .title {
+		font-size: 20px;
+	}
+	
+	#add-contact .right-side .add-phone-fields .label {
+		font-size: 17px;
+		width: 95px;
+	}
+	
+	#add-contact .right-side .add-phone-fields input[type=tel] {
+		width: 180px;
+	}
+	
+	#add-contact .right-side .add-phone-fields select {
+		width: 204px;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	#add-contact {
+		position: relative;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		width: 450px;
+		height: 930px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	#add-contact .left-side, #add-contact .right-side {
+		width: 100%;
+		display: block;
+		float: none;
+		margin: 0;
+	}
+	
+	#add-contact .right-side .phone-list .table .header-table {
+		width: 450px;
+	}
+	
+	#add-contact .right-side .phone-list .table .phones {
+		height: 180px;
+		width: 450px;
+	}
+	
+	#add-contact .footer {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	
+	#add-contact .left-side .address-info .country {
+		margin-bottom: 7px;
+	}
+	
+	#add-contact .right-side .title {
+		margin-top: 18px;
+	}
+	
+	#add-contact .right-side .add-phone-fields .label, 
+	#add-contact .left-side .form .personal-info label, 
+	#add-contact .left-side .form .address-info label {
+		font-size: 18px;
+		width: 120px;
+	}
+	
+	#add-contact .left-side .form .personal-info input[type=text], 
+	#add-contact .left-side .form .address-info input[type=text], 
+	#add-contact .right-side .add-phone-fields input[type=tel] {
+		width: 300px;
+	}
+	
+	#add-contact .left-side .form .personal-info select,
+	#add-contact .right-side .add-phone-fields select {
+		width: 324px
+	}
+}
+
+@media screen and (max-width: 490px) {
+	#add-contact {
+		width: 350px;
+		height: 950px;
+	}
+	
+	#add-contact .header {
+		padding-right: 8px;
+	}
+	
+	#add-contact .right-side .phone-list .table .header-table {
+		width: 350px;
+	}
+	
+	#add-contact .right-side .phone-list .table .phones {
+		height: 180px;
+		width: 350px;
+	}
+	
+	#add-contact .footer {
+		margin-top: 25px;
+		margin-right: -15px;
+		margin-left: -15px;
+		padding-bottom: 10px;
+	}
+	
+	#add-contact .footer .add-categories {
+		text-align: right;
+		width: 350px;
+	}
+	
+	#add-contact .footer .buttons {
+		display: block;
+		float: none;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	
+	#add-contact .footer .buttons .save, #add-contact .footer .buttons .reset {
+		width: 150px;
+	}
+	
+	#add-contact .left-side .address-info .country {
+		margin-bottom: 7px;
+	}
+	
+	#add-contact .right-side .title {
+		margin-top: 18px;
+	}
+	
+	#add-contact .right-side .add-phone-fields .label, 
+	#add-contact .left-side .form .personal-info label, 
+	#add-contact .left-side .form .address-info label {
+		font-size: 15px;
+		width: 85px;
+	}
+	
+	#add-contact .left-side .form .personal-info input[type=text], 
+	#add-contact .left-side .form .address-info input[type=text], 
+	#add-contact .right-side .add-phone-fields input[type=tel] {
+		width: 235px;
+	}
+	
+	#add-contact .left-side .form .personal-info select,
+	#add-contact .right-side .add-phone-fields select {
+		width: 259px
+	}
+}
+
+@media screen and (max-width: 395px) {
+	#add-contact {
+		width: 250px;
+		height: 1300px;
+		margin: auto;
+	}
+	
+	#add-contact .header {
+		padding-right: 6px;
+		padding-bottom: 20px;
+	}
+	
+	#add-contact .left-side .form .personal-info input[type=text], 
+	#add-contact .left-side .form .address-info input[type=text], 
+	#add-contact .right-side .add-phone-fields input[type=tel] {
+		width: 225px;
+	}
+	
+	#add-contact .left-side .form .personal-info select,
+	#add-contact .right-side .add-phone-fields select {
+		width: 249px
+	}
+	
+	#add-contact .right-side .add-phone-fields .label, 
+	#add-contact .left-side .form .personal-info label, 
+	#add-contact .left-side .form .address-info label {
+		margin-bottom: 3px;
+	}
+	
+	#add-contact .right-side .phone-list .buttons .add,
+	#add-contact .right-side .phone-list .buttons .delete,
+	#add-contact .right-side .phone-list .buttons .reset {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	#add-contact .right-side .phone-list .table .header-table table tr .th-category {
+		display: none;
+	}
+	
+	#add-contact .right-side .phone-list .table .header-table {
+		width: 250px;
+	}
+	
+	#add-contact .right-side .phone-list .table .phones table tr td {
+		display: block;
+		width: 100%;
+	}
+	
+	#add-contact .right-side .phone-list .table .phones {
+		width: 250px;
+		height: 250px;
+	}
+	
+	#add-contact .footer .add-categories {
+		width: 250px;
+		margin-bottom: 15px;
+	}
+	
+	#add-contact .footer .buttons .save, #add-contact .footer .buttons .reset {
+		margin-bottom: 10px;
+		display: block;
+		margin: auto;
+		width: 90%;
+	}
+	
+	#add-contact .footer .buttons .save {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 295px) {
+	#add-contact {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: translate(0%, 0%);
+	}
+}
