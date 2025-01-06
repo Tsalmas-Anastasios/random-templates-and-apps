@@ -1,0 +1,17 @@
+.chart {
+    height: 200px;
+    width: 200px;
+    border: 2px solid;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    transition: width 2s;
+    background-color: blue;
+
+}
