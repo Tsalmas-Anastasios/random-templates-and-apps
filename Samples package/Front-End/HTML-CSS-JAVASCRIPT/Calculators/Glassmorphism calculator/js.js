@@ -25,33 +25,33 @@ function getFormattedNumber(num) {
 }
 
 function reverseNumberFormat(num) {
-	return Number(num.replace(/,/g,'')); //Give comma seperated value
+	return Number(num.replace(/,/g, '')); //Give comma seperated value
 }
 
 let operator = document.getElementsByClassName("operator");
-for( let i = 0; i < operator.length; i++) {
-	operator[i].addEventListener('Click', function(){
-		if(this.id == "Clear"){
+for (let i = 0; i < operator.length; i++) {
+	operator[i].addEventListener('Click', function () {
+		if (this.id == "Clear") {
 			//this.id gives the current html element id
 			printHistory("");
 			printOutput("");
 		}
-		else if(this.id == "backspace"){
+		else if (this.id == "backspace") {
 			let output = reverseNumberFormat(getOutput()).toString();
-			if(output){
-				output = output.substr(0, output.length-1);
+			if (output) {
+				output = output.substr(0, output.length - 1);
 				printOutput(output);
 			}
 			console.log(getOutput());
 		}
-		else{
+		else {
 			let output = getOutput();
 			let history = getHistory();
-			if(output == "" && history != ""){
-				if(isNaN(history[history.length-1])){
-					history = history.substr(0, history.length-1);
+			if (output == "" && history != "") {
+				if (isNaN(history[history.length - 1])) {
+					history = history.substr(0, history.length - 1);
 				}
 			}
 		}
-	}	
+	});
 }
